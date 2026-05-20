@@ -1,4 +1,7 @@
-alias separator='echo -e "\n---\n"'
-alias uu='sudo apt update && separator && sudo apt upgrade -y'
-alias uua='uu && separator && sudo apt autoremove -y'
+separator() { echo -e "\n---\n"; }
+uu() { sudo apt update && separator && sudo apt upgrade -y; }
+uua() { uu && separator && sudo apt autoremove -y; }
+
+a() { tmux new-session -A -s ${1:-main}; }
+d() { tmux detach; }
 
