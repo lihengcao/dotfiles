@@ -1,1 +1,1 @@
-# dotfiles and "backups"
+# Config
